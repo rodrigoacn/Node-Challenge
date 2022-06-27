@@ -1,0 +1,41 @@
+{
+  "name": "challengenode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "set NODE_ENV=testdb&& mocha ./test/test.js",
+    "devdb": "set NODE_ENV=developmentdb&& node server.js",
+    "testdb": "set NODE_ENV=testdb&& node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "es-main": "^1.0.2",
+    "express": "^4.18.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.3",
+    "formidable": "^2.0.1",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.5",
+    "path": "^0.12.7",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.0",
+    "supertest": "^6.2.3",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
